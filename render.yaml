@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: shadowsocks-server
+    env: node
+    buildCommand: ""
+    startCommand: node index.js
+    envVars:
+      - key: SS_PASSWORD
+        value: Qwerty123456!
+      - key: PORT
+        value: 10000
